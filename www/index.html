@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<title></title>
+
+<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+<!-- ionic/angularjs js -->
+<script src="lib/ionic/js/ionic.bundle.js"></script>
+
+<!-- cordova script (this will be a 404 during development) -->
+<script src="cordova.js"></script>
+
+<script src="lib/ionic/js/angular/angular-cookies.min.js">
+    	</script>
+
+<!-- your app's js -->
+<script src="js/app.js"></script>
+</head>
+<body ng-app="cisco_quoter" ng-controller="cisco_quoter_controller">
+
+	<ion-pane> <ion-header-bar class="bar-positive"
+		style='background-color: #38659E'>
+	<h1 class="title">
+		<strong>Cisco</strong>
+	</h1>
+	</ion-header-bar> <ion-header-bar ng-show="auth_token" class='bar bar-subheader bar-light'>
+	<button class='button button-icon icon ion-navicon'
+		ng-click='ToggleLeft()'></button>
+	<div
+		style='margin-left: 2%; display: inline-block; position: absolute; color: #1E76C7; background: url(https://www.cisco.com/web/fw/tools/commerce/ngws_Q3FY16/images/header_sprit.png) 0 3px no-repeat'>
+		<h3
+			style='font-size: 18px; font-weight: 400; line-height: 18px; margin: 0 0 0 40px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; text-transform: none; white-space: nowrap;'>
+			<span
+				style='color: #1E76C7; font-size: 10px; font-weight: 700; line-height: 10px; padding: 8px 0 0; margin: 0px;'>Cisco
+				Commerce</span><br>Services &amp; Subscriptions
+		</h3>
+	</div>
+	</ion-header-bar> <ion-content overflow-scroll="true">
+	<div id="pagecontent"></div>
+	</ion-content>
+	<!--<div class="bar bar-footer bar-light">
+		<button class="button button-clear pull-right">
+			<strong>...</strong>
+		</button>
+	</div>-->
+	</ion-pane>
+</body>
+</html>

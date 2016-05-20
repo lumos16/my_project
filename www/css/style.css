@@ -1,0 +1,51 @@
+* {
+	font-family: verdana;
+}
+
+.title {
+	color: white;
+}
+
+.header .col {
+	background-color: lightgrey;
+	border: 1px solid #cccccc;
+}
+
+.col {
+	width: 33%;
+	vertical-align: middle;
+}
+/*
+.row:last-child .col {
+	border-bottom: solid 1px grey;
+}
+*/
+.table {
+	text-align: center;
+}
+
+.pane {
+	clear: both;
+}
+
+#form_element {
+	padding: 18%;
+	top: 4%;
+	left: 3%;
+	position: absolute;
+	align: center;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+}
+.valid
+{
+    color: green;
+    border-bottom: 0.25px solid silver;
+}
+
+.invalid
+{
+    color: red;
+    border-bottom: 0.25px solid silver;
+}
